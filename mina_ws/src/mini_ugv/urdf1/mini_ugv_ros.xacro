@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="mini_ugv_ros" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find mini_ugv_ros_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find mini_ugv_ros_description)/urdf/mini_ugv_ros.trans" />
+<xacro:include filename="$(find mini_ugv_ros_description)/urdf/mini_ugv_ros.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.11380348062136109 -0.11566969983460913 0.056442310494758736" rpy="0 0 0"/>
+    <mass value="14.301154006819317"/>
+    <inertia ixx="0.361841" iyy="0.146098" izz="0.407487" ixy="0.000554" iyz="4e-05" ixz="0.000884"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mini_ugv_ros_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mini_ugv_ros_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+</robot>

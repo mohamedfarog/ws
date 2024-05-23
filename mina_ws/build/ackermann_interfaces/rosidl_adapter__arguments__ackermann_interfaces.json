@@ -1,0 +1,6 @@
+{
+  "package_name": "ackermann_interfaces",
+  "non_idl_tuples": [
+    "/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces:msg/AckermannFeedback.msg"
+  ]
+}

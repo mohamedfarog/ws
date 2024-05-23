@@ -1,0 +1,196 @@
+[0.077s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/media/farog/Data/ws/mina_ws']
+[0.077s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/media/farog/Data/ws/mina_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ee49e6dbbb0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7ee49e6db610>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7ee49e6db610>>)
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.100s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/farog/Data/ws/mina_ws'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'ignore'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'ignore_ament_install'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extensions ['colcon_pkg']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'colcon_pkg'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extensions ['colcon_meta']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'colcon_meta'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extensions ['ros']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'ros'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/build) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/build) ignored
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/install) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/install) ignored
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/log) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/log) ignored
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/docker) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/private) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extensions ['ros']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'ros'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extensions ['cmake', 'python']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'cmake'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'python'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extensions ['python_setup_py']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/scripts) by extension 'python_setup_py'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extensions ['colcon_pkg']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extensions ['ros']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'ros'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extensions ['cmake', 'python']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'cmake'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'python'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extensions ['python_setup_py']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src) by extension 'python_setup_py'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extensions ['colcon_pkg']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller) by extension 'ros'
+[0.116s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller' with type 'ros.ament_python' and name 'ackermann_controller'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces) by extension 'ros'
+[0.117s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces' with type 'ros.ament_cmake' and name 'ackermann_interfaces'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry) by extension 'ros'
+[0.117s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry' with type 'ros.ament_python' and name 'ackermann_odometry'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mina_ugv) by extension 'ros'
+[0.118s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/mina_ugv' with type 'ros.ament_cmake' and name 'mina_ugv'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extension 'ignore_ament_install'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extensions ['colcon_pkg']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/mini_ugv) by extension 'ros'
+[0.118s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/mini_ugv' with type 'ros.ament_cmake' and name 'mini_ugv'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extensions ['ignore', 'ignore_ament_install']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extension 'ignore'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extension 'ignore_ament_install'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extensions ['colcon_pkg']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extension 'colcon_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extensions ['colcon_meta']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extension 'colcon_meta'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extensions ['ros']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_can) by extension 'ros'
+[0.119s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/ugv_can' with type 'ros.ament_python' and name 'ugv_can'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extensions ['ignore', 'ignore_ament_install']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extension 'ignore'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extension 'ignore_ament_install'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extensions ['colcon_pkg']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extension 'colcon_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extensions ['colcon_meta']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extension 'colcon_meta'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extensions ['ros']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ugv_design) by extension 'ros'
+[0.119s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/ugv_design' with type 'ros.ament_cmake' and name 'ugv_design'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extensions ['ros']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver) by extension 'ros'
+[0.120s] DEBUG:colcon.colcon_core.package_identification:Package '/media/farog/Data/ws/mina_ws/src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

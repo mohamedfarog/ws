@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ackermann_interfaces/msg/AckermannFeedback.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module ackermann_interfaces {
+  module msg {
+    struct AckermannFeedback {
+      std_msgs::msg::Header header;
+
+      float steering_angle;
+
+      float left_wheel_speed;
+
+      float right_wheel_speed;
+    };
+  };
+};

@@ -1,0 +1,115 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/navcon/ws/mina_ws/build/mini_ugv
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/auto.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/bringup.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/display.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/ekf.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/imu_filter.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/joystick.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/mini.ugv.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/navigation.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/navigation/display.navigation.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/navigation/gazebo.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/navigation/mapping.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/navigation/navigation2.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/navigation/robot_state_publisher.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/navigation/spawn_turtlebot3.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/og_display,launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/online_async.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/robot_loc.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/launch/robot_state_publisher.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/accessories/Intel_Props_V1.png
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/accessories/camera_back.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/accessories/camera_front.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/accessories/lidar_back.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/accessories/lidar_back_old.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/accessories/lidar_front.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/body.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_01.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_02.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_03.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_04.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_05.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_06.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_07.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_08.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_09.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_10.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_11.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_12.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_13.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_14.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_15.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/ultrasound/UltraSound_16.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/wheels/hub_front_left.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/wheels/hub_front_right.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/wheels/wheel_front_left.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/wheels/wheel_front_right.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/wheels/wheel_rear_left.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/meshes/wheels/wheel_rear_right.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/urdf/navrover.urdf
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/urdf/navrover.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/urdf/rover.gazebo.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/urdf/rover_camera.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/urdf/rover_lidar.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/urdf/rover_ultrasound.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/params/ydlidar.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/dg.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/ekf.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/ekf2.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/ekf3.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/imu_filter.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/mapper_params.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/nav2_params.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/nav2_params3.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/nav2_params_1.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/nav2_params_final.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/nav2_params_line.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/nv2_params_dism.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/config/ydlidar.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/maps/dggg.pgm
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/maps/dggg.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/maps/my_map.pgm
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/maps/my_map.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/maps/new_map.pgm
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/maps/new_map.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/rviz/display_view.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/rviz/imu.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/rviz/mapping.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/rviz/nav2_config.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/rviz/navrover.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/ament_index/resource_index/package_run_dependencies/mini_ugv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/ament_index/resource_index/parent_prefix_path/mini_ugv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/environment/ament_prefix_path.sh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/environment/ament_prefix_path.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/environment/path.sh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/environment/path.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/local_setup.bash
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/local_setup.sh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/local_setup.zsh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/local_setup.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/package.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/ament_index/resource_index/packages/mini_ugv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/cmake/mini_ugvConfig.cmake
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/cmake/mini_ugvConfig-version.cmake
+-- Symlinking: /home/navcon/ws/mina_ws/install/mini_ugv/share/mini_ugv/package.xml

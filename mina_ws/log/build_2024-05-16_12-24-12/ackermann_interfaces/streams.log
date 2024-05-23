@@ -1,0 +1,118 @@
+[0.152s] Invoking command in '/home/navcon/ws/mina_ws/build/ackermann_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --build /home/navcon/ws/mina_ws/build/ackermann_interfaces -- -j8 -l8
+[1.390s] [  3%] Built target ackermann_interfaces__cpp
+[1.390s] [ 12%] Built target ackermann_interfaces__rosidl_generator_c
+[1.390s] [ 12%] Built target ament_cmake_python_symlink_ackermann_interfaces
+[1.390s] [ 32%] Built target ackermann_interfaces__rosidl_typesupport_cpp
+[1.390s] [ 32%] Built target ackermann_interfaces__rosidl_typesupport_introspection_cpp
+[1.390s] [ 41%] Built target ackermann_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.391s] [ 51%] Built target ackermann_interfaces__rosidl_typesupport_fastrtps_c
+[1.391s] [ 70%] Built target ackermann_interfaces__rosidl_typesupport_c
+[1.391s] [ 70%] Built target ackermann_interfaces__rosidl_typesupport_introspection_c
+[1.391s] [ 70%] Built target ackermann_interfaces
+[1.391s] [ 74%] Built target ackermann_interfaces__py
+[1.391s] [ 80%] Built target ackermann_interfaces__rosidl_generator_py
+[1.391s] [ 93%] Built target ackermann_interfaces__rosidl_typesupport_c__pyext
+[1.391s] [ 93%] Built target ackermann_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.392s] [100%] Built target ackermann_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.392s] running egg_info
+[1.392s] writing ackermann_interfaces.egg-info/PKG-INFO
+[1.392s] writing dependency_links to ackermann_interfaces.egg-info/dependency_links.txt
+[1.392s] writing top-level names to ackermann_interfaces.egg-info/top_level.txt
+[1.392s] reading manifest file 'ackermann_interfaces.egg-info/SOURCES.txt'
+[1.392s] writing manifest file 'ackermann_interfaces.egg-info/SOURCES.txt'
+[1.392s] [100%] Built target ament_cmake_python_build_ackermann_interfaces_egg
+[1.412s] Invoked command in '/home/navcon/ws/mina_ws/build/ackermann_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --build /home/navcon/ws/mina_ws/build/ackermann_interfaces -- -j8 -l8
+[2.009s] Invoking command in '/home/navcon/ws/mina_ws/build/ackermann_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --install /home/navcon/ws/mina_ws/build/ackermann_interfaces
+[2.035s] -- Install configuration: ""
+[2.036s] -- Execute custom install script
+[2.036s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ament_index/resource_index/rosidl_interfaces/ackermann_interfaces
+[2.037s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/ackermann_feedback.h
+[2.037s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__functions.h
+[2.037s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__struct.h
+[2.040s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__type_support.h
+[2.040s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.041s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/library_path.sh
+[2.041s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/library_path.dsv
+[2.042s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__rosidl_typesupport_fastrtps_c.h
+[2.042s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.042s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__rosidl_typesupport_introspection_c.h
+[2.042s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.042s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/ackermann_feedback.hpp
+[2.043s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__builder.hpp
+[2.043s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__struct.hpp
+[2.043s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__traits.hpp
+[2.044s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__rosidl_typesupport_fastrtps_cpp.hpp
+[2.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/include/ackermann_interfaces/ackermann_interfaces/msg/detail/ackermann_feedback__rosidl_typesupport_introspection_cpp.hpp
+[2.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/pythonpath.sh
+[2.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/pythonpath.dsv
+[2.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces-0.0.0-py3.8.egg-info/PKG-INFO
+[2.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces-0.0.0-py3.8.egg-info/SOURCES.txt
+[2.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces-0.0.0-py3.8.egg-info/dependency_links.txt
+[2.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces-0.0.0-py3.8.egg-info/top_level.txt
+[2.052s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/__init__.py
+[2.052s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/_ackermann_interfaces_s.ep.rosidl_typesupport_c.c
+[2.052s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/_ackermann_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.052s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/_ackermann_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.053s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/ackermann_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[2.055s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/ackermann_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[2.055s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/ackermann_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[2.055s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/libackermann_interfaces__rosidl_generator_py.so
+[2.056s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/msg/__init__.py
+[2.057s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/msg/_ackermann_feedback.py
+[2.058s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/msg/_ackermann_feedback_s.c
+[2.061s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/ackermann_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[2.061s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/ackermann_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[2.062s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/ackermann_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[2.064s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/msg/AckermannFeedback.idl
+[2.065s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/msg/AckermannFeedback.msg
+[2.065s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ament_index/resource_index/package_run_dependencies/ackermann_interfaces
+[2.066s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ament_index/resource_index/parent_prefix_path/ackermann_interfaces
+[2.066s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/ament_prefix_path.sh
+[2.067s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/ament_prefix_path.dsv
+[2.067s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/path.sh
+[2.068s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/environment/path.dsv
+[2.068s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/local_setup.bash
+[2.068s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/local_setup.sh
+[2.069s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/local_setup.zsh
+[2.069s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/local_setup.dsv
+[2.070s] -- Symlinking: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/package.dsv
+[2.081s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ament_index/resource_index/packages/ackermann_interfaces
+[2.081s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.082s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.082s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.083s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.083s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.084s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.084s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.085s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfacesConfig.cmake
+[2.085s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfacesConfig-version.cmake
+[2.085s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/package.xml
+[2.086s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_generator_c.so
+[2.087s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.087s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_typesupport_introspection_c.so
+[2.088s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_typesupport_c.so
+[2.088s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.089s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.090s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_typesupport_cpp.so
+[2.165s] Listing '/home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces'...
+[2.166s] Listing '/home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages/ackermann_interfaces/msg'...
+[2.185s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/libackermann_interfaces__rosidl_generator_py.so
+[2.188s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_generator_cExport.cmake
+[2.190s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.192s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.193s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.194s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.200s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.201s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_cExport.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_generator_cppExport.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_cppExport.cmake
+[2.202s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/ackermann_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.203s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_generator_pyExport.cmake
+[2.203s] -- Up-to-date: /home/navcon/ws/mina_ws/install/ackermann_interfaces/share/ackermann_interfaces/cmake/export_ackermann_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.228s] Invoked command in '/home/navcon/ws/mina_ws/build/ackermann_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --install /home/navcon/ws/mina_ws/build/ackermann_interfaces

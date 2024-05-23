@@ -1,0 +1,22 @@
+[1.508s] Invoking command in '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry': CMAKE_PREFIX_PATH=/home/navcon/ws/mina_ws/install/ackermann_interfaces:/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver:/home/navcon/ws/mina_ws/install/ugv_design:/home/navcon/ws/mina_ws/install/mini_ugv:/home/navcon/ws/mina_ws/install/mina_ugv PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_odometry/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/ackermann_odometry build --build-base /home/navcon/ws/mina_ws/build/ackermann_odometry/build install --record /home/navcon/ws/mina_ws/build/ackermann_odometry/install.log --install-scripts $base/lib/ackermann_odometry --single-version-externally-managed install_data
+[1.967s] running egg_info
+[1.968s] writing ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/PKG-INFO
+[1.969s] writing dependency_links to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/dependency_links.txt
+[1.969s] writing entry points to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/entry_points.txt
+[1.970s] writing requirements to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/requires.txt
+[1.971s] writing top-level names to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/top_level.txt
+[2.029s] reading manifest file '../../../../build/ackermann_odometry/ackermann_odometry.egg-info/SOURCES.txt'
+[2.031s] writing manifest file '../../../../build/ackermann_odometry/ackermann_odometry.egg-info/SOURCES.txt'
+[2.031s] running build
+[2.031s] running build_py
+[2.034s] running install
+[2.037s] running install_lib
+[2.040s] running install_data
+[2.041s] running install_egg_info
+[2.044s] removing '/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry-0.0.0-py3.8.egg-info' (and everything under it)
+[2.044s] Copying ../../../../build/ackermann_odometry/ackermann_odometry.egg-info to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry-0.0.0-py3.8.egg-info
+[2.046s] running install_scripts
+[2.079s] Installing feedback_publisher script to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/ackermann_odometry
+[2.080s] Installing odom_publisher script to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/ackermann_odometry
+[2.082s] writing list of installed files to '/home/navcon/ws/mina_ws/build/ackermann_odometry/install.log'
+[2.140s] Invoked command in '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry' returned '0': CMAKE_PREFIX_PATH=/home/navcon/ws/mina_ws/install/ackermann_interfaces:/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver:/home/navcon/ws/mina_ws/install/ugv_design:/home/navcon/ws/mina_ws/install/mini_ugv:/home/navcon/ws/mina_ws/install/mina_ugv PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_odometry/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/ackermann_odometry build --build-base /home/navcon/ws/mina_ws/build/ackermann_odometry/build install --record /home/navcon/ws/mina_ws/build/ackermann_odometry/install.log --install-scripts $base/lib/ackermann_odometry --single-version-externally-managed install_data

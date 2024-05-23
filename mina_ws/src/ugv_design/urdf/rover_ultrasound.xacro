@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+	
+<!-- ==== ULTRASOUND =============================================================================== -->
+  
+  <link name="ultra_sound_01_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_01.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_01.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_02_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_02.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_02.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_03_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_03.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_03.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_04_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_04.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_04.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_05_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_05.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_05.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_06_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_06.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_06.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_07_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_07.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_07.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_08_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_08.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_08.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_09_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_09.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_09.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_10_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_10.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_10.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_11_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_11.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_11.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_12_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_12.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_12.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_13_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_13.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_13.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_14_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_14.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_14.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_15_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_15.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_15.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="ultra_sound_16_link">
+		<inertial>
+			<mass value="1e-5"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+		</inertial>
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_16.stl"/>
+			</geometry>
+			<material name="">
+				<color rgba="0 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find ugv_design)/meshes/ultrasound/UltraSound_16.stl"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint name="ultra_sound_01_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_01_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_02_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_02_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_03_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_03_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_04_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_04_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_05_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_05_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_06_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_06_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_07_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_07_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_08_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_08_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_09_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_09_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_10_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_10_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_11_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_11_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_12_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_12_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_13_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_13_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_14_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_14_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_15_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_15_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+	<joint name="ultra_sound_16_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="ultra_sound_16_link"/>
+		<axis xyz="1 0 0"/>
+	</joint>
+</robot>

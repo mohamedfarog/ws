@@ -1,0 +1,36 @@
+rplidar_node:
+  ros__parameters:
+    active: false
+    channel_type: "serial"
+    serial_port: "/dev/rplidar"
+    serial_baudrate: 1000000
+    frame_id: "laser_link"
+    inverted: false
+    angle_compensate: true
+    scan_mode: "Standard"
+    # scan_mode: "DenseBoost"
+    topic_name: "scan/og"
+
+front_lidar:
+  ros__parameters:
+    channel_type: "serial"
+    serial_port: "/dev/frontlidar"
+    serial_baudrate: 1000000
+    frame_id: "laser_front_link"
+    inverted: false
+    angle_compensate: true
+    # scan_mode: "Standard"
+    scan_mode: "DenseBoost"
+    topic_name: "front_lidar"
+
+back_lidar:
+  ros__parameters:
+    channel_type: "serial"
+    serial_port: "/dev/backlidar"
+    serial_baudrate: 1000000
+    frame_id: "laser_back_link"
+    inverted: false
+    angle_compensate: true
+    # scan_mode: "Standard"
+    scan_mode: "DenseBoost"
+    topic_name: "back_lidar"

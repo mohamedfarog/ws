@@ -1,0 +1,30 @@
+running develop
+Removing /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann-odometry.egg-link (link to .)
+running egg_info
+writing ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/dependency_links.txt
+writing entry points to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/entry_points.txt
+writing requirements to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/requires.txt
+writing top-level names to ../../../../build/ackermann_odometry/ackermann_odometry.egg-info/top_level.txt
+reading manifest file '../../../../build/ackermann_odometry/ackermann_odometry.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/ackermann_odometry/ackermann_odometry.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry
+copying /home/navcon/ws/mina_ws/build/ackermann_odometry/build/lib/ackermann_odometry/ackerman_feedback.py -> /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry
+copying /home/navcon/ws/mina_ws/build/ackermann_odometry/build/lib/ackermann_odometry/odom_publisher.py -> /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry
+copying /home/navcon/ws/mina_ws/build/ackermann_odometry/build/lib/ackermann_odometry/__init__.py -> /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry
+byte-compiling /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry/ackerman_feedback.py to ackerman_feedback.cpython-38.pyc
+byte-compiling /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry/odom_publisher.py to odom_publisher.cpython-38.pyc
+byte-compiling /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry/__init__.py to __init__.cpython-38.pyc
+running install_data
+copying resource/ackermann_odometry -> /home/navcon/ws/mina_ws/install/ackermann_odometry/share/ament_index/resource_index/packages
+copying package.xml -> /home/navcon/ws/mina_ws/install/ackermann_odometry/share/ackermann_odometry
+running install_egg_info
+Copying ../../../../build/ackermann_odometry/ackermann_odometry.egg-info to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann_odometry-0.0.0-py3.8.egg-info
+running install_scripts
+Installing feedback_publisher script to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/ackermann_odometry
+Installing odom_publisher script to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/ackermann_odometry
+writing list of installed files to '/home/navcon/ws/mina_ws/build/ackermann_odometry/install.log'

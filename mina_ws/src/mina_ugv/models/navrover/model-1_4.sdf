@@ -1,0 +1,2403 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="mina_ugv">
+    <static>false</static>
+
+    <pose>0 0 0.0 0 0 0</pose>
+
+    <link name='base_footprint' />
+
+    <joint name='base_footprint_joint' type='fixed'>
+      <pose>0.0 0.0 0.0215 0 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>base_link</child>
+    </joint>
+
+
+
+
+    <link name='base_link'>
+      <inertial>
+        <pose>1e-06 0.07307 0.65096 0 -0 0</pose>
+        <mass>1580</mass>
+        <inertia>
+          <ixx>1997.86</ixx>
+          <ixy>-3e-05</ixy>
+          <ixz>-1e-06</ixz>
+          <iyy>442.769</iyy>
+          <iyz>62.5206</iyz>
+          <izz>2238.05</izz>
+        </inertia>
+      </inertial>
+
+      <collision name='base_link_fixed_joint_lump__base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/body.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode />
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <max_contacts>10</max_contacts>
+      </collision>
+
+      <visual name='base_link_fixed_joint_lump__base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/body.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+      <self_collide>1</self_collide>
+    </link>
+
+    <joint name='rear_left_wheel_joint' type='revolute'>
+      <pose relative_to='base_link'>-0.675 0.685 0.324997 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>reverse_left_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <!-- <dynamics>
+          <friction>12.031606150200002</friction>
+        </dynamics> -->
+      </axis>
+    </joint>
+
+
+    <link name='reverse_left_wheel_link'>
+      <pose relative_to='rear_left_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0377 0 -0 0 -0 0</pose>
+        <mass>24.5</mass>
+        <inertia>
+          <ixx>1.84514</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.04961</iyy>
+          <iyz>0</iyz>
+          <izz>1.04961</izz>
+        </inertia>
+      </inertial>
+      <collision name='reverse_left_wheel_link_collision'>
+        <pose>0 0 0 1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.3</radius>
+            <length>.2</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode />
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.7</mu>
+              <mu2>1.7</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='reverse_left_wheel_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_rear_left.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <!--  <gravity>1</gravity> -->
+      <!-- <velocity_decay/> -->
+      <self_collide>1</self_collide>
+    </link>
+
+
+    <joint name='rear_right_wheel_joint' type='revolute'>
+      <pose relative_to='base_link'>-0.675 -0.685 0.324997 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>reverse_right_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <friction>12.0316</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+
+    <link name='reverse_right_wheel_link'>
+      <pose relative_to='rear_right_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0377 0 -0 0 -0 0</pose>
+        <mass>24.5</mass>
+        <inertia>
+          <ixx>1.84514</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.04961</iyy>
+          <iyz>0</iyz>
+          <izz>1.04961</izz>
+        </inertia>
+      </inertial>
+      <collision name='reverse_right_wheel_link_collision'>
+        <pose>0 0 0 1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.3</radius>
+            <length>.2</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode />
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.7</mu>
+              <mu2>1.7</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='reverse_right_wheel_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_rear_right.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <!--  <gravity>1</gravity> -->
+      <!-- <velocity_decay/> -->
+      <self_collide>1</self_collide>
+    </link>
+
+    <joint name='front_left_steer_joint' type='revolute'>
+      <pose relative_to='base_link'>0.650 0.48290 0.324997 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>front_left_steer</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.6</lower>
+          <upper>0.6</upper>
+          <effort>1000</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.01</damping>
+          <friction>48.0474092253</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <link name='front_left_steer'>
+      <pose relative_to='front_left_steer_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>4.5</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_steer_collision'>
+        <geometry>
+          <mesh>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/hub_front_left.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+            <torsional>
+              <ode/>
+            </torsional>
+          </friction>
+          <bounce/>
+        </surface>
+        <max_contacts>10</max_contacts>
+      </collision>
+
+      <visual name='front_left_steer_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/hub_front_left.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <self_collide>1</self_collide>
+    </link>
+
+    <joint name='front_left_wheel_joint' type='revolute'>
+      <pose relative_to='front_left_steer'>-0.0 0.174 0 0 -0 0</pose>
+      <parent>front_left_steer</parent>
+      <child>front_left_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <friction>12.03161</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+      </axis>
+    </joint>
+
+    
+    <link name='front_left_wheel'>
+      <pose relative_to='front_left_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0377 0 -0 0 -0 0</pose>
+        <mass>24.5</mass>
+        <inertia>
+          <ixx>1.84514</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.04961</iyy>
+          <iyz>0</iyz>
+          <izz>1.04961</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_wheel_collision'>
+        <pose>0 0 0 1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.2</length>
+            <radius>0.3</radius>
+          </cylinder>
+        </geometry>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode />
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.7</mu>
+              <mu2>1.7</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_left_wheel_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_front_left.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <self_collide>1</self_collide>
+    </link>
+
+    
+    <joint name='front_right_steer_joint' type='revolute'>
+      <pose relative_to='base_link'>0.650 -0.5129 0.324997 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>front_right_steer</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.6</lower>
+          <upper>0.6</upper>
+          <effort>1000</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.01</damping>
+          <friction>48.0474092253</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+
+    <link name='front_right_steer'>
+      <pose relative_to='front_right_steer_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>4.5</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_steer_collision'>
+        <geometry>
+          <mesh>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/hub_front_right.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+            <torsional>
+              <ode/>
+            </torsional>
+          </friction>
+          <bounce/>
+        </surface>
+        <max_contacts>10</max_contacts>
+      </collision>
+
+      <visual name='front_left_steer_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/hub_front_right.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <self_collide>1</self_collide>
+    </link>
+
+    <joint name='front_right_wheel_joint' type='revolute'>
+      <pose relative_to='front_right_steer'>0.0 -0.1693 0 0 -0 0</pose>
+      <parent>front_right_steer</parent>
+      <child>front_right_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <friction>12.03161</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+      </axis>
+    </joint>
+
+    <link name='front_right_wheel'>
+      <pose relative_to='front_right_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0377 0 -0 0 -0 0</pose>
+        <mass>24.5</mass>
+        <inertia>
+          <ixx>1.84514</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.04961</iyy>
+          <iyz>0</iyz>
+          <izz>1.04961</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_right_wheel_collision'>
+        <pose>0 0 0 1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.2</length>
+            <radius>0.3</radius>
+          </cylinder>
+        </geometry>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode />
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.7</mu>
+              <mu2>1.7</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_right_wheel_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_front_right.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <self_collide>1</self_collide>
+    </link>
+
+    <plugin name='ackermann_drive' filename='libgazebo_ros_ackermann_drive.so'>
+
+    
+      <update_rate>100.0</update_rate>
+
+      <!-- wheels -->
+      <front_left_joint>front_left_wheel_joint</front_left_joint>
+      <front_right_joint>front_right_wheel_joint</front_right_joint>
+      <rear_left_joint>rear_left_wheel_joint</rear_left_joint>
+      <rear_right_joint>rear_right_wheel_joint</rear_right_joint>
+      <left_steering_joint>front_left_steer_joint</left_steering_joint>
+      <right_steering_joint>front_right_steer_joint</right_steering_joint>
+      <steering_wheel_joint/>
+
+
+      <!-- Max absolute steer angle for tyre in radians-->
+      <!-- Any cmd_vel angular z greater than this would be capped -->
+      <max_steer>0.65</max_steer>
+
+      <!-- Max absolute steering angle of steering wheel -->
+      <!-- Max absolute steering angle of steering wheel -->
+      <max_steering_angle>6.85</max_steering_angle>
+
+      <!-- Max absolute linear speed in m/s -->
+      <max_speed>20</max_speed>
+
+      <!-- PID tuning -->
+      <left_steering_pid_gain>1500 0 1</left_steering_pid_gain>
+      <left_steering_i_range>0 0</left_steering_i_range>
+      <right_steering_pid_gain>1500 0 1</right_steering_pid_gain>
+      <right_steering_i_range>0 0</right_steering_i_range>
+      <linear_velocity_pid_gain>1000 0 1</linear_velocity_pid_gain>
+      <linear_velocity_i_range>0 0</linear_velocity_i_range>
+
+      <!-- output -->
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+      <publish_distance>true</publish_distance>
+
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <ros>
+        <remapping>odom:=wheel/odometry</remapping>
+      </ros>
+
+
+    </plugin>
+
+    <joint name='laser_front_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>laser_front_link</child>
+    </joint>
+
+
+    <link name='laser_front_link'>
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='front_left_steer_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/lidar_front.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='front_left_steer_collision'>
+        <pose>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/lidar_front.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="lidar" type="ray">
+        <pose>1 -0.02 0.95 0 0 1.57</pose>
+        <always_on>true</always_on>
+        <visualize>false</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>-3.14</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.3</min>
+            <max>15.0</max>
+            <resolution>0.015</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="scan" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=scan</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>laser_front_link</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+
+    <joint name='back_lidar_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>lidar_back</child>
+    </joint>
+
+
+    <link name='lidar_back'>
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='back_left_steer_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/lidar_back.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='back_left_steer_collision'>
+        <pose>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/lidar_back.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="lidar" type="ray">
+        <pose>-1 -0.02 0.89 0 0 -1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>-3.14</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.3</min>
+            <max>15.0</max>
+            <resolution>0.015</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="scan2" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=scan2</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>lidar_back</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <link name="imu_link">
+      <gravity>true</gravity>
+      <sensor name="bmb_imu" type="imu">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <visualize>true</visualize>
+        <imu>
+          <orientation>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-3</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-3</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-3</stddev>
+              </noise>
+            </z>
+          </orientation>
+          <angular_velocity>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+              </noise>
+            </z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+              </noise>
+            </z>
+          </linear_acceleration>
+        </imu>
+        <plugin name="basic_mobile_bot_imu" filename="libgazebo_ros_imu_sensor.so">
+          <initial_orientation_as_reference>false</initial_orientation_as_reference>
+          <frame_name>imu_link</frame_name>
+          <ros>
+            <namespace>/imu</namespace>
+            <remapping>~/out:=data</remapping>
+          </ros>
+        </plugin>
+      </sensor>
+    </link>
+
+
+    <joint name="imu_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>imu_link</child>
+      <pose>0 0 0 0 0 0</pose>
+    </joint>  
+
+    <!-- <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+      <jointName>rear_left_wheel_joint</jointName>
+    <jointname>rear_right_wheel_joint</jointname>
+          <jointname>front_left_wheel_joint</jointname>
+    <jointname>front_right_wheel_joint</jointname>
+    <jointname>front_left_wheel_joint</jointname>
+    <jointname>front_right_wheel_joint</jointname>
+
+  </plugin> -->
+
+    <joint name='back_camera_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>camera_back</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='camera_back'>
+      <!-- <pose relative_to='base_link'>0.05 0.0 -0.105 0 -0 0</pose> -->
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='cf1'>
+        <pose>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/camera_back.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='cf1_visual'>
+        <pose>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/camera_back.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor type="camera" name="camera1">
+        <pose>-1.05 -0.02 0.685 0 0 -3.14</pose>
+        <update_rate>30.0</update_rate>
+        <visualize>true</visualize>
+        <camera name="head">
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>800</width>
+            <height>800</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.02</near>
+            <far>300</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+          <alwaysOn>false</alwaysOn>
+          <updateRate>0.0</updateRate>
+          <cameraName>rrbot/camera1</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>camera_back</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='front_camera_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>camera_front</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='camera_front'>
+      <pose relative_to='base_link'>0 0.0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='cf1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/camera_front.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='cf1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/accessories/camera_front.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor type="camera" name="camera2">
+        <pose>1.06 -0.02 0.885 0 0 0</pose>
+        <update_rate>30.0</update_rate>
+        <visualize>true</visualize>
+        <camera name="head">
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>800</width>
+            <height>800</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.02</near>
+            <far>300</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+
+            <mean>0.0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <plugin name="camera_controller2" filename="libgazebo_ros_camera.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>0.0</updateRate>
+          <cameraName>rrbot/camera2</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>camera_front</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+    </link>
+
+
+    <joint name='ultrasound1_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound1'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound1_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_01.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound1_cos'>
+        <pose>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_01.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_1" type="ray">
+        <pose>1.05 -0.5 0.634 0 0 0</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_1" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_1</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound1</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound2_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound2'>
+      <pose relative_to='base_link'>0 -0.0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound2_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_02.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound2_cos'>
+        <pose>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_02.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_2" type="ray">
+        <pose>1.05 -0.18 0.634 0 0 0</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_2" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_2</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound2</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound3_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound3'>
+      <pose relative_to='base_link'>0 0.0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound3_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_03.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound3_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_03.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_3" type="ray">
+        <pose>1.05 0.148 0.634 0 0 0</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_3" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_3</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound3</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound4_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound4'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound4_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_04.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound4_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_04.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_4" type="ray">
+        <pose>1.05 0.46 0.634 0 0 0</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_4" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_4</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound4</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound5_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound5</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound5'>
+      <!-- <pose relative_to='base_link'>0.56 -0.44 0.04 0 -0 0</pose> -->
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound5_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_05.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound5_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_05.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_5" type="ray">
+        <pose>1.02 0.6 0.66 0 0 1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_5" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_5</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound5</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound6_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound6</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound6'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound6_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_06.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound6_cos'>
+        <pose>0 0 0.0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_06.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_6" type="ray">
+        <pose>0.35 0.6 0.675 0 0 1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_6" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_6</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound6</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound7_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound7</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound7'>
+      <!-- <pose relative_to='base_link'>-0.17 -0.46 0.05 0 -0 0</pose> -->
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound7_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_07.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound7_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_07.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_7" type="ray">
+        <pose>-0.35 0.6 0.675 0 0 1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_7" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_7</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound7</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound8_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound8</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound8'>
+      <!-- <pose relative_to='base_link'>-0.45 -0.445 0.05 0 -0 0</pose> -->
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound8_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_08.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound8_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_08.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_8" type="ray">
+        <pose>-0.95 0.6 0.675 0 0 1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_8" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_8</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound8</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound9_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound9</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound9'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound9_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_09.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound9_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_09.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_9" type="ray">
+        <pose>-1.05 0.58 0.634 0 0 -3.14</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_9" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_9</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound9</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound10_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound10</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound10'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound10_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_10.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound10_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_10.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_10" type="ray">
+        <pose>-1.05 0.18 0.634 0 0 -3.14</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_10" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_10</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound10</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound11_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound11</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound11'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound11_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_11.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound11_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_11.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_11" type="ray">
+        <pose>-1.05 -0.22 0.634 0 0 -3.14</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_11" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_11</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound11</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+     <joint name='ultrasound12_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound12</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound12'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound12_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_12.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound12_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_12.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_12" type="ray">
+        <pose>-1.05 -0.628 0.634 0 0 -3.14</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_12" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_12</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound12</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+
+
+   <joint name='ultrasound13_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound13</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound13'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound13_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_13.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound13_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_13.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_13" type="ray">
+        <pose>-0.95 -0.65 0.68 0 0 -1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_13" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_13</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound13</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound14_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound14</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound14'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound14_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_14.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound14_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_14.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_14" type="ray">
+        <pose>-0.35 -0.65 0.68 0 0 -1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_14" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_14</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound14</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound15_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound15</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound15'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound15_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_15.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound15_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_15.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_15" type="ray">
+        <pose>0.35 -0.65 0.68 0 0 -1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_15" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_15</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound15</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name='ultrasound16_joint' type='fixed'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>ultrasound16</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+    <link name='ultrasound16'>
+      <pose relative_to='base_link'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='ultrasound16_vis'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_16.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='ultrasound16_cos'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neptune/ros2_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_16.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <sensor name="ultrasound_16" type="ray">
+        <pose>1.015 -0.65 0.66 0 0 -1.57</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.12</min_angle>
+              <max_angle>0.02</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-0.01</min_angle>
+              <max_angle>0.01</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.02</min>
+            <max>2</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="ultrasound_sensor_16" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=ultrasound_sensor_16</remapping>
+          </ros>
+          <output_type>sensor_msgs/Range</output_type>
+          <radiation_type>ultrasound</radiation_type>
+          <frame_name>ultrasound16</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+  </model>
+</sdf>

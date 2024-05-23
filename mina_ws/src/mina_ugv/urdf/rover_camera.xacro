@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot
+	xmlns:xacro="http://www.ros.org/wiki/xacro">
+	
+ <!-- ==== CAMERA =============================================================================== -->
+
+  <link name="camera_front_link">
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find mina_ugv)/meshes/accessories/camera_front.dae"/>
+			</geometry>
+			<material name="">
+				<color rgba="1 1 1 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find mina_ugv)/meshes/accessories/camera_front.dae"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="camera_back_link">
+		<visual>
+			<origin rpy="0 3.17 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find mina_ugv)/meshes/accessories/camera_back.dae"/>
+			</geometry>
+			<material name="">
+				<color rgba="1 1 1 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="file://$(find mina_ugv)/meshes/accessories/camera_back.dae"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint name="camera_front_joint" type="fixed">
+		<origin rpy="0 0 0" xyz="1.06182 -0.021586 0.883543"/>
+		<parent link="base_link"/>
+		<child link="camera_front_link"/>
+		<axis xyz="0 0 0"/>
+	</joint>
+	<joint name="camera_back_joint" type="fixed">
+		<origin rpy="0 0 -3.17" xyz="-1.04844 -0.021586 0.686544"/>
+		<parent link="base_link"/>
+		<child link="camera_back_link"/>
+		<axis xyz="0 0 0"/>
+	</joint>
+</robot>

@@ -1,0 +1,351 @@
+[0.404s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.404s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff96cc53a0>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff96cc53a0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff96cc59a0>)
+[0.744s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.745s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/navcon/ws/mina_ws'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'ignore'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'ignore_ament_install'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extensions ['colcon_pkg']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'colcon_pkg'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extensions ['colcon_meta']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'colcon_meta'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extensions ['ros']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'ros'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extensions ['cmake', 'python']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'cmake'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'python'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extensions ['python_setup_py']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry) by extension 'python_setup_py'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'ignore'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'ignore_ament_install'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extensions ['colcon_pkg']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'colcon_pkg'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extensions ['colcon_meta']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'colcon_meta'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extensions ['ros']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'ros'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extensions ['cmake', 'python']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'cmake'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'python'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extensions ['python_setup_py']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/docker) by extension 'python_setup_py'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extensions ['ignore', 'ignore_ament_install']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'ignore'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'ignore_ament_install'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extensions ['colcon_pkg']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'colcon_pkg'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extensions ['colcon_meta']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'colcon_meta'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extensions ['ros']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'ros'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extensions ['cmake', 'python']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'cmake'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'python'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extensions ['python_setup_py']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/private) by extension 'python_setup_py'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'ignore'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'ignore_ament_install'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extensions ['colcon_pkg']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'colcon_pkg'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extensions ['colcon_meta']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'colcon_meta'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extensions ['ros']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'ros'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extensions ['cmake', 'python']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'cmake'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'python'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extensions ['python_setup_py']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/scripts) by extension 'python_setup_py'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extensions ['ignore', 'ignore_ament_install']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'ignore'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'ignore_ament_install'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extensions ['colcon_pkg']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'colcon_pkg'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extensions ['colcon_meta']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'colcon_meta'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extensions ['ros']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'ros'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extensions ['cmake', 'python']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'cmake'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'python'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extensions ['python_setup_py']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src) by extension 'python_setup_py'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extension 'ignore'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extension 'ignore_ament_install'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extensions ['colcon_pkg']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extension 'colcon_pkg'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extensions ['colcon_meta']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extension 'colcon_meta'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extensions ['ros']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_controller) by extension 'ros'
+[0.783s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ackermann-odometry/src/ackermann_controller' with type 'ros.ament_python' and name 'ackermann_controller'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extension 'ignore'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extension 'ignore_ament_install'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extensions ['colcon_pkg']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extension 'colcon_pkg'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extensions ['colcon_meta']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extension 'colcon_meta'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extensions ['ros']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_interfaces) by extension 'ros'
+[0.786s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ackermann-odometry/src/ackermann_interfaces' with type 'ros.ament_cmake' and name 'ackermann_interfaces'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extension 'ignore'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extension 'ignore_ament_install'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extensions ['colcon_pkg']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extension 'colcon_pkg'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extensions ['colcon_meta']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extension 'colcon_meta'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extensions ['ros']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann-odometry/src/ackermann_odometry) by extension 'ros'
+[0.787s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ackermann-odometry/src/ackermann_odometry' with type 'ros.ament_python' and name 'ackermann_odometry'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extensions ['ignore', 'ignore_ament_install']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extension 'ignore'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extension 'ignore_ament_install'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extensions ['colcon_pkg']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extension 'colcon_pkg'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extensions ['colcon_meta']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extension 'colcon_meta'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extensions ['ros']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/mina_ugv) by extension 'ros'
+[0.790s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mina_ugv' with type 'ros.ament_cmake' and name 'mina_ugv'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extensions ['ignore', 'ignore_ament_install']
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extension 'ignore'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extension 'ignore_ament_install'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extensions ['colcon_pkg']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extension 'colcon_pkg'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extensions ['colcon_meta']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extension 'colcon_meta'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extensions ['ros']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_ugv) by extension 'ros'
+[0.792s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_ugv' with type 'ros.ament_cmake' and name 'mini_ugv'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extensions ['ignore', 'ignore_ament_install']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extension 'ignore'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extension 'ignore_ament_install'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extensions ['colcon_pkg']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extension 'colcon_pkg'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extensions ['colcon_meta']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extension 'colcon_meta'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extensions ['ros']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_can) by extension 'ros'
+[0.794s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_can' with type 'ros.ament_python' and name 'ugv_can'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extensions ['ignore', 'ignore_ament_install']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extension 'ignore'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extension 'ignore_ament_install'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extensions ['colcon_pkg']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extension 'colcon_pkg'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extensions ['colcon_meta']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extension 'colcon_meta'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extensions ['ros']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_design) by extension 'ros'
+[0.795s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_design' with type 'ros.ament_cmake' and name 'ugv_design'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[0.797s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.797s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.859s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.863s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/navcon/ws/mina_ws/install
+[0.867s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 400 installed packages in /opt/ros/humble
+[0.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.032s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'cmake_args' from command line to 'None'
+[1.032s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'cmake_target' from command line to 'None'
+[1.032s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.032s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.032s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'ackermann_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.033s] DEBUG:colcon.colcon_core.verb:Building package 'ackermann_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/ackermann_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/ackermann_controller', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller', 'symlink_install': False, 'test_result_base': None}
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'ackermann_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.034s] DEBUG:colcon.colcon_core.verb:Building package 'ackermann_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/ackermann_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/ackermann_interfaces', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'cmake_args' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'cmake_target' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'cmake_clean_cache' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'cmake_clean_first' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'cmake_force_configure' from command line to 'False'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'ament_cmake_args' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'catkin_cmake_args' from command line to 'None'
+[1.035s] Level 5:colcon.colcon_core.verb:set package 'mina_ugv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.035s] DEBUG:colcon.colcon_core.verb:Building package 'mina_ugv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/mina_ugv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/mina_ugv', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/mina_ugv', 'symlink_install': False, 'test_result_base': None}
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'cmake_args' from command line to 'None'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'cmake_target' from command line to 'None'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'cmake_clean_cache' from command line to 'False'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'cmake_clean_first' from command line to 'False'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'cmake_force_configure' from command line to 'False'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'ament_cmake_args' from command line to 'None'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'catkin_cmake_args' from command line to 'None'
+[1.036s] Level 5:colcon.colcon_core.verb:set package 'mini_ugv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.037s] DEBUG:colcon.colcon_core.verb:Building package 'mini_ugv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/mini_ugv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/mini_ugv', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/mini_ugv', 'symlink_install': False, 'test_result_base': None}
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'cmake_args' from command line to 'None'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'cmake_target' from command line to 'None'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'cmake_clean_cache' from command line to 'False'
+[1.037s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'cmake_clean_first' from command line to 'False'
+[1.038s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'cmake_force_configure' from command line to 'False'
+[1.038s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'ament_cmake_args' from command line to 'None'
+[1.038s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'catkin_cmake_args' from command line to 'None'
+[1.038s] Level 5:colcon.colcon_core.verb:set package 'ugv_can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.038s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/ugv_can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/ugv_can', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/ugv_can', 'symlink_install': False, 'test_result_base': None}
+[1.038s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'cmake_args' from command line to 'None'
+[1.038s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'cmake_target' from command line to 'None'
+[1.038s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'cmake_clean_cache' from command line to 'False'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'cmake_clean_first' from command line to 'False'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'cmake_force_configure' from command line to 'False'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'ament_cmake_args' from command line to 'None'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'catkin_cmake_args' from command line to 'None'
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'ugv_design' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.039s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_design' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/ugv_design', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/ugv_design', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/ugv_design', 'symlink_install': False, 'test_result_base': None}
+[1.039s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.040s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/ydlidar_ros2_driver', 'symlink_install': False, 'test_result_base': None}
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'cmake_args' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'cmake_target' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'cmake_clean_first' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'cmake_force_configure' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'ament_cmake_args' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'ackermann_odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.041s] DEBUG:colcon.colcon_core.verb:Building package 'ackermann_odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/navcon/ws/mina_ws/build/ackermann_odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/navcon/ws/mina_ws/install/ackermann_odometry', 'merge_install': False, 'path': '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_odometry', 'symlink_install': False, 'test_result_base': None}
+[1.041s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.045s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces' with build type 'ament_cmake'
+[1.046s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces'
+[1.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.051s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.051s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.066s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller' with build type 'ament_python'
+[1.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('ackermann_controller', 'ament_prefix_path')
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller/hook/ament_prefix_path.ps1'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller/hook/ament_prefix_path.dsv'
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller/hook/ament_prefix_path.sh'
+[1.073s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.073s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.086s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/navcon/ws/mina_ws/src/mina_ugv' with build type 'ament_cmake'
+[1.087s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/navcon/ws/mina_ws/src/mina_ugv'
+[1.088s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.088s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.102s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/navcon/ws/mina_ws/src/mini_ugv' with build type 'ament_cmake'
+[1.103s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/navcon/ws/mina_ws/src/mini_ugv'
+[1.104s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.104s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.117s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/navcon/ws/mina_ws/src/ugv_can' with build type 'ament_python'
+[1.117s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_can', 'ament_prefix_path')
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/navcon/ws/mina_ws/install/ugv_can/share/ugv_can/hook/ament_prefix_path.ps1'
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/navcon/ws/mina_ws/install/ugv_can/share/ugv_can/hook/ament_prefix_path.dsv'
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/navcon/ws/mina_ws/install/ugv_can/share/ugv_can/hook/ament_prefix_path.sh'
+[1.122s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.122s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.134s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/navcon/ws/mina_ws/src/ugv_design' with build type 'ament_cmake'
+[1.135s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/navcon/ws/mina_ws/src/ugv_design'
+[1.136s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.136s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.151s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/navcon/ws/mina_ws/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[1.151s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/navcon/ws/mina_ws/src/ydlidar_ros2_driver'
+[1.152s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.152s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/navcon/ws/mina_ws/build/ackermann_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake /home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_interfaces -DCMAKE_INSTALL_PREFIX=/home/navcon/ws/mina_ws/install/ackermann_interfaces
+[1.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[1.321s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[1.331s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/navcon/ws/mina_ws/build/mina_ugv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake /home/navcon/ws/mina_ws/src/mina_ugv -DCMAKE_INSTALL_PREFIX=/home/navcon/ws/mina_ws/install/mina_ugv
+[1.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/navcon/ws/mina_ws/build/mini_ugv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake /home/navcon/ws/mina_ws/src/mini_ugv -DCMAKE_INSTALL_PREFIX=/home/navcon/ws/mina_ws/install/mini_ugv
+[1.889s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/navcon/ws/mina_ws/src/ugv_can'
+[1.890s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.890s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/navcon/ws/mina_ws/build/ugv_design': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake /home/navcon/ws/mina_ws/src/ugv_design -DCMAKE_INSTALL_PREFIX=/home/navcon/ws/mina_ws/install/ugv_design
+[1.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake /home/navcon/ws/mina_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver
+[1.943s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[1.944s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.944s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.944s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.958s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.958s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.958s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.993s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.994s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/navcon/ws/mina_ws/install/local_setup.ps1'
+[1.996s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/navcon/ws/mina_ws/install/_local_setup_util_ps1.py'
+[1.999s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/navcon/ws/mina_ws/install/setup.ps1'
+[2.002s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/navcon/ws/mina_ws/install/local_setup.sh'
+[2.002s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/navcon/ws/mina_ws/install/_local_setup_util_sh.py'
+[2.003s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/navcon/ws/mina_ws/install/setup.sh'
+[2.006s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/navcon/ws/mina_ws/install/local_setup.bash'
+[2.006s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/navcon/ws/mina_ws/install/setup.bash'
+[2.009s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/navcon/ws/mina_ws/install/local_setup.zsh'
+[2.009s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/navcon/ws/mina_ws/install/setup.zsh'

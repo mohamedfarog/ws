@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: ackermann-odometry
+Version: 0.0.0
+Summary: ROS Node to publish Odometry message for ackermann vehicle based on wheel speed and steering angle
+Home-page: UNKNOWN
+Maintainer: Adam Aposhian
+Maintainer-email: aposhian.dev@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

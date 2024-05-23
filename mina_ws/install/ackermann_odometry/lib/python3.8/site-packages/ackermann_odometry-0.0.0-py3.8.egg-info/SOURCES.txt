@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../../../build/ackermann_odometry/ackermann_odometry.egg-info/PKG-INFO
+../../../../build/ackermann_odometry/ackermann_odometry.egg-info/SOURCES.txt
+../../../../build/ackermann_odometry/ackermann_odometry.egg-info/dependency_links.txt
+../../../../build/ackermann_odometry/ackermann_odometry.egg-info/entry_points.txt
+../../../../build/ackermann_odometry/ackermann_odometry.egg-info/requires.txt
+../../../../build/ackermann_odometry/ackermann_odometry.egg-info/top_level.txt
+../../../../build/ackermann_odometry/ackermann_odometry.egg-info/zip-safe
+ackermann_odometry/__init__.py
+ackermann_odometry/ackerman_feedback.py
+ackermann_odometry/odom_publisher.py
+resource/ackermann_odometry

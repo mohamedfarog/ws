@@ -1,0 +1,31 @@
+running egg_info
+writing ../../build/ugv_can/ugv_can.egg-info/PKG-INFO
+writing dependency_links to ../../build/ugv_can/ugv_can.egg-info/dependency_links.txt
+writing entry points to ../../build/ugv_can/ugv_can.egg-info/entry_points.txt
+writing requirements to ../../build/ugv_can/ugv_can.egg-info/requires.txt
+writing top-level names to ../../build/ugv_can/ugv_can.egg-info/top_level.txt
+reading manifest file '../../build/ugv_can/ugv_can.egg-info/SOURCES.txt'
+writing manifest file '../../build/ugv_can/ugv_can.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/ugv_can/ugv_can.egg-info to /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can-0.0.0-py3.8.egg-info
+running install_scripts
+Installing converter script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing first_odom_publisher script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing first_odom_while_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing imu_mad script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing imu_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_final script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_publisher script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_while_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing ps_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing sample script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing sender script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+writing list of installed files to '/home/navcon/ws/mina_ws/build/ugv_can/install.log'

@@ -1,0 +1,3 @@
+[console_scripts]
+ackermann_teleop_joy = ackermann_controller.ackermann_teleop_joy:main
+

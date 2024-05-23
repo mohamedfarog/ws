@@ -1,0 +1,72 @@
+[2.458s] Invoking command in '/home/navcon/ws/mina_ws/build/ugv_can': PYTHONPATH=/home/navcon/ws/mina_ws/build/ugv_can/prefix_override:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/navcon/ws/mina_ws/build/ugv_can/build
+[3.079s] running develop
+[3.450s] Removing /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv-can.egg-link (link to .)
+[3.531s] Invoked command in '/home/navcon/ws/mina_ws/build/ugv_can' returned '0': PYTHONPATH=/home/navcon/ws/mina_ws/build/ugv_can/prefix_override:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/navcon/ws/mina_ws/build/ugv_can/build
+[3.534s] Invoking command in '/home/navcon/ws/mina_ws/src/ugv_can': PYTHONPATH=/home/navcon/ws/mina_ws/build/ugv_can/prefix_override:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ugv_can build --build-base /home/navcon/ws/mina_ws/build/ugv_can/build install --record /home/navcon/ws/mina_ws/build/ugv_can/install.log --single-version-externally-managed install_data --force
+[4.137s] running egg_info
+[4.137s] writing ../../build/ugv_can/ugv_can.egg-info/PKG-INFO
+[4.138s] writing dependency_links to ../../build/ugv_can/ugv_can.egg-info/dependency_links.txt
+[4.141s] writing entry points to ../../build/ugv_can/ugv_can.egg-info/entry_points.txt
+[4.141s] writing requirements to ../../build/ugv_can/ugv_can.egg-info/requires.txt
+[4.141s] writing top-level names to ../../build/ugv_can/ugv_can.egg-info/top_level.txt
+[4.203s] reading manifest file '../../build/ugv_can/ugv_can.egg-info/SOURCES.txt'
+[4.205s] writing manifest file '../../build/ugv_can/ugv_can.egg-info/SOURCES.txt'
+[4.205s] running build
+[4.206s] running build_py
+[4.212s] copying ugv_can/scaled_offset.py -> /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can
+[4.213s] running install
+[4.214s] running install_lib
+[4.221s] creating /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.222s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/navrover_ps4_ctrl.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.223s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/publish_odom.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.223s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/can_sample.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.224s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/custom_odom_from_cmd.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.224s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/base_odom.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.224s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/new_odom_publisher.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.224s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/first_odom_publisher.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.225s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/new_publisher.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.225s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/can2_sample.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.225s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/odom_while_pub.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.225s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/odom_publisher.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.225s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/first_odom_while_pub.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.225s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/__init__.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.225s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/imu_mad.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.226s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/publish_odom2.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.226s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/manual_odom_publisher.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.226s] copying /home/navcon/ws/mina_ws/build/ugv_can/build/lib/ugv_can/scaled_offset.py -> /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can
+[4.226s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/navrover_ps4_ctrl.py to navrover_ps4_ctrl.cpython-38.pyc
+[4.226s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/publish_odom.py to publish_odom.cpython-38.pyc
+[4.226s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/can_sample.py to can_sample.cpython-38.pyc
+[4.228s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/custom_odom_from_cmd.py to custom_odom_from_cmd.cpython-38.pyc
+[4.228s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/base_odom.py to base_odom.cpython-38.pyc
+[4.229s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/new_odom_publisher.py to new_odom_publisher.cpython-38.pyc
+[4.230s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/first_odom_publisher.py to first_odom_publisher.cpython-38.pyc
+[4.232s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/new_publisher.py to new_publisher.cpython-38.pyc
+[4.232s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/can2_sample.py to can2_sample.cpython-38.pyc
+[4.234s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/odom_while_pub.py to odom_while_pub.cpython-38.pyc
+[4.234s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/odom_publisher.py to odom_publisher.cpython-38.pyc
+[4.235s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/first_odom_while_pub.py to first_odom_while_pub.cpython-38.pyc
+[4.237s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/__init__.py to __init__.cpython-38.pyc
+[4.237s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/imu_mad.py to imu_mad.cpython-38.pyc
+[4.239s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/publish_odom2.py to publish_odom2.cpython-38.pyc
+[4.242s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/manual_odom_publisher.py to manual_odom_publisher.cpython-38.pyc
+[4.242s] byte-compiling /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can/scaled_offset.py to scaled_offset.cpython-38.pyc
+[4.244s] running install_data
+[4.244s] copying resource/ugv_can -> /home/navcon/ws/mina_ws/install/ugv_can/share/ament_index/resource_index/packages
+[4.244s] copying package.xml -> /home/navcon/ws/mina_ws/install/ugv_can/share/ugv_can
+[4.244s] running install_egg_info
+[4.250s] Copying ../../build/ugv_can/ugv_can.egg-info to /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv_can-0.0.0-py3.8.egg-info
+[4.251s] running install_scripts
+[4.292s] Installing converter script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.293s] Installing imu_mad script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.293s] Installing imu_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.293s] Installing odom_final script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.294s] Installing odom_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.294s] Installing odom_publisher script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.294s] Installing odom_while_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.294s] Installing ps_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.294s] Installing pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.294s] Installing sample script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.295s] Installing sender script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.295s] writing list of installed files to '/home/navcon/ws/mina_ws/build/ugv_can/install.log'
+[4.369s] Invoked command in '/home/navcon/ws/mina_ws/src/ugv_can' returned '0': PYTHONPATH=/home/navcon/ws/mina_ws/build/ugv_can/prefix_override:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ugv_can build --build-base /home/navcon/ws/mina_ws/build/ugv_can/build install --record /home/navcon/ws/mina_ws/build/ugv_can/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,4 @@
+[console_scripts]
+feedback_publisher = ackermann_odometry.ackerman_feedback:main
+odom_publisher = ackermann_odometry.odom_publisher:main
+

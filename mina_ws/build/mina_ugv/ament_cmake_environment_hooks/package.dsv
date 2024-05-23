@@ -1,0 +1,4 @@
+source;share/mina_ugv/local_setup.bash
+source;share/mina_ugv/local_setup.dsv
+source;share/mina_ugv/local_setup.sh
+source;share/mina_ugv/local_setup.zsh

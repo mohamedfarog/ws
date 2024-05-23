@@ -1,0 +1,20 @@
+[1.385s] Invoking command in '/home/navcon/ws/mina_ws/build/ackermann_odometry': CMAKE_PREFIX_PATH=/home/navcon/ws/mina_ws/install/ackermann_interfaces:/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver:/home/navcon/ws/mina_ws/install/ugv_design:/home/navcon/ws/mina_ws/install/mini_ugv:/home/navcon/ws/mina_ws/install/mina_ugv PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_odometry/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/navcon/ws/mina_ws/build/ackermann_odometry/build --no-deps symlink_data --force
+[1.921s] running develop
+[2.279s] running egg_info
+[2.279s] writing ackermann_odometry.egg-info/PKG-INFO
+[2.280s] writing dependency_links to ackermann_odometry.egg-info/dependency_links.txt
+[2.280s] writing entry points to ackermann_odometry.egg-info/entry_points.txt
+[2.283s] writing requirements to ackermann_odometry.egg-info/requires.txt
+[2.283s] writing top-level names to ackermann_odometry.egg-info/top_level.txt
+[2.338s] reading manifest file 'ackermann_odometry.egg-info/SOURCES.txt'
+[2.339s] writing manifest file 'ackermann_odometry.egg-info/SOURCES.txt'
+[2.430s] running build_ext
+[2.430s] Creating /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages/ackermann-odometry.egg-link (link to .)
+[2.432s] Installing feedback_publisher script to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/ackermann_odometry
+[2.432s] Installing odom_publisher script to /home/navcon/ws/mina_ws/install/ackermann_odometry/lib/ackermann_odometry
+[2.433s] 
+[2.433s] Installed /home/navcon/ws/mina_ws/build/ackermann_odometry
+[2.433s] running symlink_data
+[2.433s] symbolically linking /home/navcon/ws/mina_ws/build/ackermann_odometry/resource/ackermann_odometry -> /home/navcon/ws/mina_ws/install/ackermann_odometry/share/ament_index/resource_index/packages
+[2.433s] symbolically linking /home/navcon/ws/mina_ws/build/ackermann_odometry/package.xml -> /home/navcon/ws/mina_ws/install/ackermann_odometry/share/ackermann_odometry
+[2.506s] Invoked command in '/home/navcon/ws/mina_ws/build/ackermann_odometry' returned '0': CMAKE_PREFIX_PATH=/home/navcon/ws/mina_ws/install/ackermann_interfaces:/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver:/home/navcon/ws/mina_ws/install/ugv_design:/home/navcon/ws/mina_ws/install/mini_ugv:/home/navcon/ws/mina_ws/install/mina_ugv PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_odometry/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_interfaces/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_odometry/lib/python3.8/site-packages:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/navcon/ws/mina_ws/build/ackermann_odometry/build --no-deps symlink_data --force

@@ -1,0 +1,27 @@
+[3.446s] Invoking command in '/home/navcon/ws/mina_ws/build/ugv_can': PYTHONPATH=/home/navcon/ws/mina_ws/build/ugv_can/prefix_override:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/navcon/ws/mina_ws/build/ugv_can/build --no-deps symlink_data
+[3.955s] running develop
+[4.315s] running egg_info
+[4.316s] writing ugv_can.egg-info/PKG-INFO
+[4.316s] writing dependency_links to ugv_can.egg-info/dependency_links.txt
+[4.319s] writing entry points to ugv_can.egg-info/entry_points.txt
+[4.319s] writing requirements to ugv_can.egg-info/requires.txt
+[4.320s] writing top-level names to ugv_can.egg-info/top_level.txt
+[4.376s] reading manifest file 'ugv_can.egg-info/SOURCES.txt'
+[4.378s] writing manifest file 'ugv_can.egg-info/SOURCES.txt'
+[4.481s] running build_ext
+[4.483s] Creating /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv-can.egg-link (link to .)
+[4.486s] Installing converter script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.489s] Installing imu_mad script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.489s] Installing imu_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.489s] Installing odom_final script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.489s] Installing odom_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.489s] Installing odom_publisher script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.490s] Installing odom_while_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.490s] Installing ps_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.490s] Installing pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.490s] Installing sample script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.490s] Installing sender script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+[4.498s] 
+[4.498s] Installed /home/navcon/ws/mina_ws/build/ugv_can
+[4.498s] running symlink_data
+[4.597s] Invoked command in '/home/navcon/ws/mina_ws/build/ugv_can' returned '0': PYTHONPATH=/home/navcon/ws/mina_ws/build/ugv_can/prefix_override:/home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/navcon/ws/mina_ws/build/ugv_can/build --no-deps symlink_data

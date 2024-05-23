@@ -1,0 +1,182 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+-- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found laser_geometry: 2.4.0 (/opt/ros/humble/share/laser_geometry/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/navcon/ws/mina_ws/build/mina_ugv
+[35m[1mScanning dependencies of target odom_publisher_ackermann_node[0m
+[35m[1mScanning dependencies of target ament_cmake_python_symlink_mina_ugv[0m
+[  0%] Built target ament_cmake_python_symlink_mina_ugv
+[35m[1mScanning dependencies of target ament_cmake_python_build_mina_ugv_egg[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odom_publisher_ackermann_node.dir/src/Odom_Publisher.cpp.o[0m
+running egg_info
+creating mina_ugv.egg-info
+writing mina_ugv.egg-info/PKG-INFO
+writing dependency_links to mina_ugv.egg-info/dependency_links.txt
+writing top-level names to mina_ugv.egg-info/top_level.txt
+writing manifest file 'mina_ugv.egg-info/SOURCES.txt'
+reading manifest file 'mina_ugv.egg-info/SOURCES.txt'
+writing manifest file 'mina_ugv.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_mina_ugv_egg
+[01m[K/home/navcon/ws/mina_ws/src/mina_ugv/src/Odom_Publisher.cpp:[m[K In member function ‘[01m[Kvoid OdomPublisher::handle_vel(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)[m[K’:
+[01m[K/home/navcon/ws/mina_ws/src/mina_ugv/src/Odom_Publisher.cpp:84:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KR[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   84 |    double [01;35m[KR[m[K = wheelbase_ / tan(steer_angle/180.0*MI_PI);
+      |           [01;35m[K^[m[K
+[100%] [32m[1mLinking CXX executable odom_publisher_ackermann_node[0m
+[100%] Built target odom_publisher_ackermann_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/odom_publisher_ackermann_node
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/camera/camera_back_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/camera/camera_both_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/camera/camera_front_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/display.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/lidar/lidar_back_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/lidar/lidar_both_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/lidar/lidar_front_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/local_setup/display_local.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/local_setup/local_ugv_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/navigation/display.navigation.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/navigation/gazebo.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/navigation/mapping.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/navigation/navigation2.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/navigation/online_async.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/navigation/robot_state_publisher.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/navigation/spawn_turtlebot3.launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/launch/ugv_launch.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/accessories/Intel_Props_V1.png
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/accessories/camera_back.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/accessories/camera_front.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/accessories/lidar_back.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/accessories/lidar_back_old.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/accessories/lidar_front.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/body.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_01.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_02.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_03.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_04.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_05.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_06.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_07.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_08.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_09.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_10.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_11.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_12.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_13.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_14.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_15.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/ultrasound/UltraSound_16.stl
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/wheels/hub_front_left.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/wheels/hub_front_right.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/wheels/wheel_front_left.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/wheels/wheel_front_right.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/wheels/wheel_rear_left.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/meshes/wheels/wheel_rear_right.dae
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/accessories.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/camera.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/camera_360_with_depth.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/display_view.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/dual_camera.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/imu.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/multi_lidar.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/nav2_config.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/nav2_mapping.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/nav2_navigation.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/navrover.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/rviz/tb3_navigation2.rviz
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/urdf/navrover.urdf
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/urdf/navrover.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/urdf/rover.gazebo.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/urdf/rover_camera.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/urdf/rover_lidar.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/urdf/rover_ultrasound.xacro
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/worlds/sample.world
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/config/mapper_params_online_async.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/config/navrover_config.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/config/realsense_config.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/config/rplidar_config.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/params/nav2_params.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/params/nav2_params3.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/maps/land1_map.pgm
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/maps/land1_map.yaml
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/models/navrover/model-1_4.sdf
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/models/navrover/model.config
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/models/navrover/model.sdf
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/environment/pythonpath.sh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/environment/pythonpath.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages/mina_ugv-0.0.0-py3.8.egg-info/PKG-INFO
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages/mina_ugv-0.0.0-py3.8.egg-info/SOURCES.txt
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages/mina_ugv-0.0.0-py3.8.egg-info/dependency_links.txt
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages/mina_ugv-0.0.0-py3.8.egg-info/top_level.txt
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages/mina_ugv/__init__.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/modules/Controller.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/modules/Topics.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/modules/__pycache__/Controller.cpython-310.pyc
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/modules/__pycache__/Controller.cpython-38.pyc
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/modules/__pycache__/Topics.cpython-310.pyc
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/modules/__pycache__/Topics.cpython-38.pyc
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/ugv_driver.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/navrover_ps4_ctrl.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/lidar_avoidance.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/lidar_scan_multiple.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/lidar_to_point_publish.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/lib/mina_ugv/publish_gps_data.py
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/ament_index/resource_index/package_run_dependencies/mina_ugv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/ament_index/resource_index/parent_prefix_path/mina_ugv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/environment/ament_prefix_path.sh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/environment/ament_prefix_path.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/environment/path.sh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/environment/path.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/local_setup.bash
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/local_setup.sh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/local_setup.zsh
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/local_setup.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/package.dsv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/ament_index/resource_index/packages/mina_ugv
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/cmake/mina_ugvConfig.cmake
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/cmake/mina_ugvConfig-version.cmake
+-- Symlinking: /home/navcon/ws/mina_ws/install/mina_ugv/share/mina_ugv/package.xml
+Listing '/home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages/mina_ugv'...
+Compiling '/home/navcon/ws/mina_ws/install/mina_ugv/lib/python3.8/site-packages/mina_ugv/__init__.py'...

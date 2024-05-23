@@ -1,0 +1,9 @@
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/install/strip.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/install/local.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/install.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/list_install_components.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/rebuild_cache.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/edit_cache.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/test.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/ugv_design_uninstall.dir
+/home/navcon/ws/mina_ws/build/ugv_design/CMakeFiles/uninstall.dir

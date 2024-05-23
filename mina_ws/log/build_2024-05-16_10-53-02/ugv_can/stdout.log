@@ -1,0 +1,29 @@
+running develop
+running egg_info
+writing ugv_can.egg-info/PKG-INFO
+writing dependency_links to ugv_can.egg-info/dependency_links.txt
+writing entry points to ugv_can.egg-info/entry_points.txt
+writing requirements to ugv_can.egg-info/requires.txt
+writing top-level names to ugv_can.egg-info/top_level.txt
+reading manifest file 'ugv_can.egg-info/SOURCES.txt'
+writing manifest file 'ugv_can.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/navcon/ws/mina_ws/install/ugv_can/lib/python3.8/site-packages/ugv-can.egg-link (link to .)
+Installing converter script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing first_odom_publisher script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing first_odom_while_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing imu_mad script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing imu_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_final script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_publisher script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing odom_while_pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing ps_node script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing pub script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing sample script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+Installing sender script to /home/navcon/ws/mina_ws/install/ugv_can/lib/ugv_can
+
+Installed /home/navcon/ws/mina_ws/build/ugv_can
+running symlink_data
+symbolically linking /home/navcon/ws/mina_ws/build/ugv_can/resource/ugv_can -> /home/navcon/ws/mina_ws/install/ugv_can/share/ament_index/resource_index/packages
+symbolically linking /home/navcon/ws/mina_ws/build/ugv_can/package.xml -> /home/navcon/ws/mina_ws/install/ugv_can/share/ugv_can

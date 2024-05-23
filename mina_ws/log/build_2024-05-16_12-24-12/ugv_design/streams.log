@@ -1,0 +1,74 @@
+[1.257s] Invoking command in '/home/navcon/ws/mina_ws/build/ugv_design': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --build /home/navcon/ws/mina_ws/build/ugv_design -- -j8 -l8
+[1.389s] Invoked command in '/home/navcon/ws/mina_ws/build/ugv_design' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --build /home/navcon/ws/mina_ws/build/ugv_design -- -j8 -l8
+[1.564s] Invoking command in '/home/navcon/ws/mina_ws/build/ugv_design': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --install /home/navcon/ws/mina_ws/build/ugv_design
+[1.589s] -- Install configuration: ""
+[1.589s] -- Execute custom install script
+[1.589s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/launch/display.launch.py
+[1.589s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/launch/mapping.launch.py
+[1.589s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/launch/navigation2.launch.py
+[1.590s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/launch/online_async.launch.py
+[1.590s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/launch/robot_state_publisher.launch.py
+[1.590s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/launch/spawn_turtlebot3.launch.py
+[1.590s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/launch/ugv_design.launch.py
+[1.590s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/accessories/Intel_Props_V1.png
+[1.592s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/accessories/camera_back.dae
+[1.592s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/accessories/camera_front.dae
+[1.592s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/accessories/lidar_back.dae
+[1.592s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/accessories/lidar_front.dae
+[1.593s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/body.dae
+[1.596s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_01.stl
+[1.598s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_02.stl
+[1.599s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_03.stl
+[1.601s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_04.stl
+[1.605s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_05.stl
+[1.605s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_06.stl
+[1.605s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_07.stl
+[1.605s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_08.stl
+[1.605s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_09.stl
+[1.610s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_10.stl
+[1.611s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_11.stl
+[1.611s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_12.stl
+[1.618s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_13.stl
+[1.620s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_14.stl
+[1.620s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_15.stl
+[1.622s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/ultrasound/UltraSound_16.stl
+[1.624s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/wheels/hub_front_left.dae
+[1.634s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/wheels/hub_front_right.dae
+[1.634s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_front_left.dae
+[1.636s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_front_right.dae
+[1.636s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_rear_left.dae
+[1.636s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/meshes/wheels/wheel_rear_right.dae
+[1.638s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/urdf/navrover.urdf
+[1.639s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/urdf/navrover.xacro
+[1.641s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/urdf/rover.gazebo.xacro
+[1.642s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/urdf/rover_camera.xacro
+[1.643s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/urdf/rover_lidar.xacro
+[1.643s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/urdf/rover_ultrasound.xacro
+[1.645s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/rviz/display_view.rviz
+[1.646s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/rviz/nav2_config.rviz
+[1.647s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/rviz/navrover.rviz
+[1.649s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/worlds/sample.world
+[1.651s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/params/nav2_params.yaml
+[1.653s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/params/nav2_params3.yaml
+[1.655s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/maps/land1_map.pgm
+[1.657s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/maps/land1_map.yaml
+[1.662s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/models/navrover/model-1_4.sdf
+[1.662s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/models/navrover/model.config
+[1.662s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/models/navrover/model.sdf
+[1.681s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/config/mapper_params_online_async.yaml
+[1.683s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ament_index/resource_index/package_run_dependencies/ugv_design
+[1.683s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ament_index/resource_index/parent_prefix_path/ugv_design
+[1.684s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/environment/ament_prefix_path.sh
+[1.685s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/environment/ament_prefix_path.dsv
+[1.686s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/environment/path.sh
+[1.690s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/environment/path.dsv
+[1.692s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/local_setup.bash
+[1.694s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/local_setup.sh
+[1.695s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/local_setup.zsh
+[1.698s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/local_setup.dsv
+[1.699s] -- Symlinking: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/package.dsv
+[1.738s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ament_index/resource_index/packages/ugv_design
+[1.739s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/cmake/ugv_designConfig.cmake
+[1.739s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/cmake/ugv_designConfig-version.cmake
+[1.739s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ugv_design/share/ugv_design/package.xml
+[1.769s] Invoked command in '/home/navcon/ws/mina_ws/build/ugv_design' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --install /home/navcon/ws/mina_ws/build/ugv_design

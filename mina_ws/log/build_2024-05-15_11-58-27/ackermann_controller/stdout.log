@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating ackermann_controller.egg-info
+writing ackermann_controller.egg-info/PKG-INFO
+writing dependency_links to ackermann_controller.egg-info/dependency_links.txt
+writing entry points to ackermann_controller.egg-info/entry_points.txt
+writing requirements to ackermann_controller.egg-info/requires.txt
+writing top-level names to ackermann_controller.egg-info/top_level.txt
+writing manifest file 'ackermann_controller.egg-info/SOURCES.txt'
+reading manifest file 'ackermann_controller.egg-info/SOURCES.txt'
+writing manifest file 'ackermann_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/site.py
+Creating /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann-controller.egg-link (link to .)
+Installing ackermann_teleop_joy script to /home/navcon/ws/mina_ws/install/ackermann_controller/lib/ackermann_controller
+
+Installed /home/navcon/ws/mina_ws/build/ackermann_controller
+running symlink_data
+creating /home/navcon/ws/mina_ws/install/ackermann_controller/share/ament_index
+creating /home/navcon/ws/mina_ws/install/ackermann_controller/share/ament_index/resource_index
+creating /home/navcon/ws/mina_ws/install/ackermann_controller/share/ament_index/resource_index/packages
+symbolically linking /home/navcon/ws/mina_ws/build/ackermann_controller/resource/ackermann_controller -> /home/navcon/ws/mina_ws/install/ackermann_controller/share/ament_index/resource_index/packages
+symbolically linking /home/navcon/ws/mina_ws/build/ackermann_controller/package.xml -> /home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller
+creating /home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller/launch
+symbolically linking /home/navcon/ws/mina_ws/build/ackermann_controller/launch/joy.launch.py -> /home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller/launch

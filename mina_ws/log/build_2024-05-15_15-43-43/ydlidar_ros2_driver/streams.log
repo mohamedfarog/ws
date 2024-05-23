@@ -1,0 +1,73 @@
+[1.410s] Invoking command in '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ros2_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake /home/navcon/ws/mina_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver
+[1.520s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.152s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.183s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[2.315s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.329s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.368s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.455s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.604s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.606s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.950s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.319s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.678s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.939s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[4.072s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.282s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.302s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.303s] -- Configured cppcheck include dirs: /home/navcon/ws/mina_ws/src/ydlidar_ros2_driver/src
+[4.303s] -- Configured cppcheck exclude dirs and/or files: 
+[4.329s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.329s] -- Configured cpplint exclude dirs and/or files: 
+[4.333s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.342s] -- Added test 'lint_cmake' to check CMake code style
+[4.347s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.366s] -- Added test 'uncrustify' to check C / C++ code style
+[4.366s] -- Configured uncrustify additional arguments: 
+[4.377s] -- Added test 'xmllint' to check XML markup files
+[4.395s] -- Configuring done
+[4.481s] -- Generating done
+[4.488s] -- Build files have been written to: /home/navcon/ws/mina_ws/build/ydlidar_ros2_driver
+[4.579s] Invoked command in '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ros2_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake /home/navcon/ws/mina_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/navcon/ws/mina_ws/install/ydlidar_ros2_driver
+[4.581s] Invoking command in '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ros2_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --build /home/navcon/ws/mina_ws/build/ydlidar_ros2_driver -- -j8 -l8
+[4.836s] [ 50%] Built target ydlidar_ros2_driver_client
+[4.870s] [100%] Built target ydlidar_ros2_driver_node
+[4.904s] Invoked command in '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ros2_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --build /home/navcon/ws/mina_ws/build/ydlidar_ros2_driver -- -j8 -l8
+[5.009s] Invoking command in '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ros2_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --install /home/navcon/ws/mina_ws/build/ydlidar_ros2_driver
+[5.039s] -- Install configuration: ""
+[5.040s] -- Execute custom install script
+[5.041s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[5.041s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[5.043s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[5.043s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[5.043s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[5.043s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml
+[5.044s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml
+[5.044s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml
+[5.044s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml
+[5.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml
+[5.048s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml
+[5.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TminiPro.yaml
+[5.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml
+[5.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml
+[5.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml
+[5.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[5.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[5.049s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[5.050s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[5.050s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[5.050s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[5.050s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[5.054s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[5.054s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[5.055s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[5.055s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[5.055s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[5.056s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[5.056s] -- Symlinking: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[5.084s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[5.086s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[5.088s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[5.090s] -- Up-to-date symlink: /home/navcon/ws/mina_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[5.099s] Invoked command in '/home/navcon/ws/mina_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/navcon/ros2_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ugv_can:/home/navcon/ws/mina_ws/install/ackermann_odometry:/home/navcon/ws/mina_ws/install/ackermann_controller:/opt/ros/humble /usr/bin/cmake --install /home/navcon/ws/mina_ws/build/ydlidar_ros2_driver

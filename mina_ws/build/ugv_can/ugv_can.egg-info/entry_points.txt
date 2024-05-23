@@ -1,0 +1,15 @@
+[console_scripts]
+converter = ugv_can.value_converter:main
+first_odom_publisher = ugv_can.first_odom_publisher:main
+first_odom_while_pub = ugv_can.first_odom_while_pub:main
+imu_mad = ugv_can.imu_mad:main
+imu_node = ugv_can.imu:main
+odom_final = ugv_can.odom_final:main
+odom_pub = ugv_can.odom_pub:main
+odom_publisher = ugv_can.odom_publisher:main
+odom_while_pub = ugv_can.odom_while_pub:main
+ps_node = ugv_can.navrover_ps4_ctrl:main
+pub = ugv_can.can_pub2:main
+sample = ugv_can.sample_odom_publisher:main
+sender = ugv_can.scaled_offset:main
+

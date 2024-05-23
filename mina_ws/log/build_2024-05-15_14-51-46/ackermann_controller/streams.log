@@ -1,0 +1,33 @@
+[2.495s] Invoking command in '/home/navcon/ws/mina_ws/build/ackermann_controller': PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_controller/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/navcon/ws/mina_ws/build/ackermann_controller/build
+[3.051s] running develop
+[3.417s] Removing /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann-controller.egg-link (link to .)
+[3.509s] Invoked command in '/home/navcon/ws/mina_ws/build/ackermann_controller' returned '0': PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_controller/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/navcon/ws/mina_ws/build/ackermann_controller/build
+[3.513s] Invoking command in '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller': PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_controller/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/ackermann_controller build --build-base /home/navcon/ws/mina_ws/build/ackermann_controller/build install --record /home/navcon/ws/mina_ws/build/ackermann_controller/install.log --install-scripts $base/lib/ackermann_controller --single-version-externally-managed install_data --force
+[4.032s] running egg_info
+[4.034s] writing ../../../../build/ackermann_controller/ackermann_controller.egg-info/PKG-INFO
+[4.036s] writing dependency_links to ../../../../build/ackermann_controller/ackermann_controller.egg-info/dependency_links.txt
+[4.038s] writing entry points to ../../../../build/ackermann_controller/ackermann_controller.egg-info/entry_points.txt
+[4.039s] writing requirements to ../../../../build/ackermann_controller/ackermann_controller.egg-info/requires.txt
+[4.040s] writing top-level names to ../../../../build/ackermann_controller/ackermann_controller.egg-info/top_level.txt
+[4.102s] reading manifest file '../../../../build/ackermann_controller/ackermann_controller.egg-info/SOURCES.txt'
+[4.104s] writing manifest file '../../../../build/ackermann_controller/ackermann_controller.egg-info/SOURCES.txt'
+[4.105s] running build
+[4.105s] running build_py
+[4.107s] copying ackermann_controller/ackermann_teleop_joy.py -> /home/navcon/ws/mina_ws/build/ackermann_controller/build/lib/ackermann_controller
+[4.107s] running install
+[4.109s] running install_lib
+[4.112s] creating /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann_controller
+[4.112s] copying /home/navcon/ws/mina_ws/build/ackermann_controller/build/lib/ackermann_controller/ackermann_teleop_joy.py -> /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann_controller
+[4.112s] copying /home/navcon/ws/mina_ws/build/ackermann_controller/build/lib/ackermann_controller/__init__.py -> /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann_controller
+[4.113s] byte-compiling /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann_controller/ackermann_teleop_joy.py to ackermann_teleop_joy.cpython-38.pyc
+[4.116s] byte-compiling /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann_controller/__init__.py to __init__.cpython-38.pyc
+[4.117s] running install_data
+[4.117s] copying resource/ackermann_controller -> /home/navcon/ws/mina_ws/install/ackermann_controller/share/ament_index/resource_index/packages
+[4.117s] copying package.xml -> /home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller
+[4.117s] copying launch/joy.launch.py -> /home/navcon/ws/mina_ws/install/ackermann_controller/share/ackermann_controller/launch
+[4.118s] running install_egg_info
+[4.123s] Copying ../../../../build/ackermann_controller/ackermann_controller.egg-info to /home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages/ackermann_controller-0.0.0-py3.8.egg-info
+[4.125s] running install_scripts
+[4.161s] Installing ackermann_teleop_joy script to /home/navcon/ws/mina_ws/install/ackermann_controller/lib/ackermann_controller
+[4.162s] writing list of installed files to '/home/navcon/ws/mina_ws/build/ackermann_controller/install.log'
+[4.243s] Invoked command in '/home/navcon/ws/mina_ws/src/ackermann-odometry/src/ackermann_controller' returned '0': PYTHONPATH=/home/navcon/ws/mina_ws/build/ackermann_controller/prefix_override:/home/navcon/ws/mina_ws/install/ackermann_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/ackermann_controller build --build-base /home/navcon/ws/mina_ws/build/ackermann_controller/build install --record /home/navcon/ws/mina_ws/build/ackermann_controller/install.log --install-scripts $base/lib/ackermann_controller --single-version-externally-managed install_data --force

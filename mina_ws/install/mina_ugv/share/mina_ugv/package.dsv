@@ -1,0 +1,11 @@
+source;share/mina_ugv/hook/cmake_prefix_path.ps1
+source;share/mina_ugv/hook/cmake_prefix_path.dsv
+source;share/mina_ugv/hook/cmake_prefix_path.sh
+source;share/mina_ugv/hook/pythonpath.ps1
+source;share/mina_ugv/hook/pythonpath.dsv
+source;share/mina_ugv/hook/pythonpath.sh
+source;share/mina_ugv/local_setup.bash
+source;share/mina_ugv/local_setup.dsv
+source;share/mina_ugv/local_setup.ps1
+source;share/mina_ugv/local_setup.sh
+source;share/mina_ugv/local_setup.zsh

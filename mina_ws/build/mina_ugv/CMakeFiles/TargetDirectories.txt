@@ -1,0 +1,12 @@
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/install/strip.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/install/local.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/install.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/list_install_components.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/rebuild_cache.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/edit_cache.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/test.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/ament_cmake_python_build_mina_ugv_egg.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/ament_cmake_python_symlink_mina_ugv.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/mina_ugv_uninstall.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/odom_publisher_ackermann_node.dir
+/home/navcon/ws/mina_ws/build/mina_ugv/CMakeFiles/uninstall.dir
